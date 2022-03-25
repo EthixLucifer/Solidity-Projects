@@ -1,0 +1,135 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.11564f7e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_buyersPAN",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_sellersPAN",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_invoiceAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_invoiceID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_invoiceStatusNo",
+						"type": "uint256"
+					}
+				],
+				"name": "createInvoice",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_buyersPAN",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_invoiceno",
+						"type": "uint256"
+					}
+				],
+				"name": "viewInvoice",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "buyerPAN",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "sellerPAN",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "invoiceAmount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "invoiceDate",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "invoiceID",
+								"type": "uint256"
+							},
+							{
+								"internalType": "enum decentralizedInvoicing.paymentStatus",
+								"name": "invoiceStatus",
+								"type": "uint8"
+							}
+						],
+						"internalType": "struct decentralizedInvoicing.invoiceData",
+						"name": "ivd",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts\\decentralizedInvoicing.sol": "decentralizedInvoicing"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts\\decentralizedInvoicing.sol": {
+			"keccak256": "0xe9bd252c896c1fc002253f37c1551192de246119cb5ca1dff236ec5a8423141f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://269ede24d9f4eef9161d8474debfed0667934916cecab61a60fb0cdf6447b671",
+				"dweb:/ipfs/QmY2bkyWSYVctUCnfE3LNp17pKqu8H4umjFWyHXDUg3gkX"
+			]
+		}
+	},
+	"version": 1
+}
